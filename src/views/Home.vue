@@ -1,5 +1,7 @@
 <template>
   <div class="contents"><br><br><br><br><br>
+    <!-- Thx unDraw <3 -->
+    <img id="big-image" src="@/assets/img/pages/home/topillustration.svg" alt="">
     <h1 id="big-title">Digital<br>open source<br>projects</h1>
 
     <div id="product-list">
@@ -60,7 +62,7 @@ export default {
       },
       darkmode: {
         image: "https://camo.githubusercontent.com/0ac16ab0c0033f8c562b72601722eb71c0a269c1/68747470733a2f2f6c68332e676f6f676c6575736572636f6e74656e742e636f6d2f614c704879496c4a71663570434869475433356575676d584951574e34574e7630454c536d656833414e4252585865727935334e6f64534f30353246387561387632413d733138302d7277",
-        prev: "https://camo.githubusercontent.com/0ac16ab0c0033f8c562b72601722eb71c0a269c1/68747470733a2f2f6c68332e676f6f676c6575736572636f6e74656e742e636f6d2f614c704879496c4a71663570434869475433356575676d584951574e34574e7630454c536d656833414e4252585865727935334e6f64534f30353246387561387632413d733138302d7277",
+        prev: require("../assets/img/prevs/darkmode.png"),
         name: "Darkmode",
         category: "Tools",
         links: {
@@ -101,10 +103,31 @@ export default {
     margin-top: 100px;
   }
 
+  #big-image {
+    float: right;
+    width: 500px;
+    position: relative;
+    top: 30px;
+    animation: top-image 5s infinite ease-in-out;
+  }
+
+  @keyframes top-image {
+    0% {
+      top: 40px;
+    }
+    50% {
+      top: 33px;
+    }
+    100% {
+      top: 40px;
+    }
+  }
+
   #product-list {
     width: fit-content;
     margin: auto;
     margin-top: 200px;
+    text-align: center;
     img {
       margin-right: 30px;
       width: 80px;
@@ -115,6 +138,7 @@ export default {
       vertical-align: middle;
       transition: 0.3s;
       margin-bottom: 20px;
+      cursor: pointer;
     }
     img.selected {
       width: 90px;
@@ -135,6 +159,8 @@ export default {
       background-size: contain;
       background-repeat: no-repeat;
       border-radius: 10px 0px 0px 10px;
+      background-size: cover;
+      background-position: center center;
     }
 
     #product-info {
@@ -174,6 +200,16 @@ export default {
       }
     }
   }
+
+  @media screen and (max-width: 1080px) {
+    #big-image {
+      display: none;
+    }
+    #big-title {
+      text-align: center;
+    }
+  }
+
   @media screen and (max-width: 720px) {
     #big-title {
       font-size: 50px;

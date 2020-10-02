@@ -24,11 +24,11 @@ export default {
         left: 50%;
         top: 20px;
         transform: translateX(-50%);
-        
+        z-index: 1000;
         max-width: 1300px;
         width: 100%;
         padding: 10px;
-        background: #EEEEEEAA;
+        background: #EEEEEEBF;
         backdrop-filter: blur(3px);
         
 

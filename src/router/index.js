@@ -48,6 +48,9 @@ const routes = [
   {
     path: '/donate', name: 'Donate', component: () => import('../views/pages/Donate.vue')
   },
+  {
+    path: '/*', name: '404', component: () => import('../views/404.vue')
+  },
 ]
 
 const router = new VueRouter({
