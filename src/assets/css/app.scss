@@ -1,0 +1,17 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.contents {
+    max-width: 1300px;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+}
