@@ -71,6 +71,17 @@ export default {
           "More information": "/darkmode"
         },
         description: "Darkmode is an app with which you can enable the system-wide darkmode on android devices!"
+      },
+      passwords: {
+        image: "https://passwords.interaapps.de/icon.svg",
+        prev: "https://cdn.interaapps.de/service/quotysco/userupload/8d09767a62423d85ff31342a4c369adb6bc1f65808a5a6274a2df069d99845df6be082b392bb3ceabc514509c75bcc2730860f02d69e1db795a4cc4c3f5c0f1e170e6e586dbc99d4c22081356d3018c8.svg",
+        name: "InteraApps Passwords",
+        category: "Tools",
+        links: {
+          "Visit": "https://passwords.interaapps.de",
+          "Source-Code": "https://github.com/interaapps/passwords"
+        },
+        description: "InteraApps Passwords is a client-encrypted password-manager. Don't forget your passwords. Just keep one in mind. This one will be the encryption key for all of your passwords. We don't know your passwords and strangers not."
       }
     }
   }},
@@ -91,6 +102,7 @@ export default {
   }
 
   #product-list {
+    width: fit-content;
     margin: auto;
     margin-top: 200px;
     img {
