@@ -7,6 +7,7 @@
 
         <div id="links">
             <a class="link" href="https://quotysco.ga/interaapps">Blog</a>
+            <a class="link" href="https://github.com/interaapps">GitHub</a>
             <router-link class="link" to="/" id="projects-button">Projects</router-link>
             <a id="accounts-link" href="https://accounts.interaapps.de">Login</a>
         </div>
