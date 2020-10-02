@@ -32,4 +32,30 @@
     text-decoration: none;
     margin-right: 20px;
 }
+
+ @media screen and (max-width: 720px) {
+    #footer {
+        padding: 10px 20px;
+        text-align: center;
+    }
+    
+    #footer #copyright {
+        display: block;
+        position: relative; 
+        margin-top: 7px; 
+        margin-bottom: 10px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    
+    #footer img {
+        display: block;
+        margin: 10px auto;
+    }
+    
+    #footer a, #footer a:link, #footer a:visited {
+        margin-right: 0px;
+        display: block;
+    }
+}
 </style>
