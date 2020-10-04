@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import store from '../store'
 import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
@@ -32,10 +33,10 @@ const routes = [
     component: () => import('../views/pages/Darkmode.vue')
   },
   {
-    path: '/privacy', name: 'Privacy', component: () => import('../views/pages/Privacy.vue')
+    path: '/privacy', name: 'Privacy',  meta: {navTitle: "Privacy & Terms"}, component: () => import('../views/pages/Privacy.vue')
   },
   {
-    path: '/p/informationen', name: 'Privacy', component: () => import('../views/pages/Privacy.vue')
+    path: '/p/informationen', name: 'Privacy',  meta: {navTitle: "Privacy & Terms"}, component: () => import('../views/pages/Privacy.vue')
   },
   {
     path: '/dsgvo', name: 'Privacy', component: () => import('../views/pages/Privacy.vue')
@@ -47,6 +48,12 @@ const routes = [
   },
   {
     path: '/donate', name: 'Donate', component: () => import('../views/pages/Donate.vue')
+  },
+  {
+    path: '/blog', name: 'Blog', meta: {navTitle: "Blog"}, component: () => import('../views/blog/Blog.vue')
+  },
+  {
+    path: '/blog/:name', name: 'Blog', meta: {navTitle: "Blog"}, component: () => import('../views/blog/Post.vue')
   },
   {
     path: '/*', name: '404', component: () => import('../views/404.vue')
@@ -66,6 +73,11 @@ router.beforeEach((to, from, next) => {
     document.title = to.name+' | InteraApps'
 
   document.querySelector('meta[name="description"]').setAttribute("content", to.meta.description || "InteraApps is a team that creates open source software.");
+
+  if (to.meta.navTitle)
+    store.state.navTitle = to.meta.navTitle;
+  else
+    store.state.navTitle = "InteraApps";
 
   window.scrollTo(0, 0);
   next();

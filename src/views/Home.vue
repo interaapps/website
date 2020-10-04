@@ -141,8 +141,9 @@ export default {
       cursor: pointer;
     }
     img.selected {
-      width: 90px;
+      width: 95px;
       padding: 10px;
+      box-shadow: 0px 1px 20px 0px #00000028;
     }
   }
 
@@ -175,6 +176,7 @@ export default {
       h1 {
         font-size: 43px;
         color: #323232;
+        font-weight: 600;
       }
 
       a,

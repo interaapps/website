@@ -1,8 +1,8 @@
 <template>
     <div id="footer">
         <img class="noSelection" width="40px" src="https://interaapps.de/assets/interaapps/icon/icon3.png" />
-        <router-link to="/imprint">Impressum</router-link><a class="noSelection footerseparator">-</a>
-        <router-link to="/privacy">Datenschutz</router-link><a class="noSelection footerseparator">-</a>
+        <router-link to="/imprint">Imprint</router-link><a class="noSelection footerseparator">-</a>
+        <router-link to="/privacy">Privacy & Terms</router-link><a class="noSelection footerseparator">-</a>
         <router-link to="/donate">Donate</router-link>
         <a class="noSelection" id="copyright">InteraApps 2020</a>
     </div>
