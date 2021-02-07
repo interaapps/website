@@ -28,6 +28,7 @@ const routes = [
     name: 'Darkmode',
     meta: {
       title: "Darkmode",
+      footerColor: "#040710",
       description: "Darkmode is an app with which you can toggle your android system-wide darkmode."
     },
     component: () => import('../views/pages/Darkmode.vue')
@@ -54,6 +55,12 @@ const routes = [
   },
   {
     path: '/blog/:name', name: 'Blog', meta: {navTitle: "Blog"}, component: () => import('../views/blog/Post.vue')
+  },
+  {
+    path: '/transparency', name: 'Transparency Report', meta: {navTitle: "Transparency Report"}, component: () => import('../views/transparency/Transparency.vue')
+  },
+  {
+    path: '/transparency/removal/:id', name: 'Removal', meta: {navTitle: "Transparency Report"}, component: () => import('../views/transparency/Removal.vue')
   },
   {
     path: '/*', name: '404', component: () => import('../views/404.vue')

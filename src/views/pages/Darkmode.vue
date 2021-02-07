@@ -43,7 +43,7 @@
         background-repeat: repeat;
         background-size: auto;
         background-repeat: repeat-y;
-        background-position: top;
+        background-position: bottom;
         background-size: cover;
         padding-left: 13px;
         padding-right: 13px;

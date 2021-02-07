@@ -28,7 +28,7 @@ export default {
     currentProduct: "pastefy",
     products: {
       pastefy: {
-        image: "https://pastefy.ga/assets/images/icon.png",
+        image: require("../assets/img/icons/pastefy.png"),
         prev: require("../assets/img/prevs/pastefy.png"),
         name: "Pastefy",
         category: "Tools",
@@ -39,7 +39,7 @@ export default {
         description: "Pastefy is an open source Paster. You can use it for saving code-snippets and share them."
       },
       punyshort: {
-        image: "https://www.punyshort.ga/assets/images/icons/icon.svg",
+        image: require("../assets/img/icons/punyshort.png"),
         prev: require("../assets/img/prevs/punyshort.png"),
         name: "Punyshort",
         category: "Tools",
@@ -50,7 +50,7 @@ export default {
         description: "PunyShort is an open source Linkshortener, with which can short huge links in to a tiny one! You want to track the clicks on the link? No problem! It is also possible. You can track non-user-related data like the country, browser and the time with which/when the user clicked on the link!"
       },
       quotysco: {
-        image: "https://quotysco.ga/assets/images/logo.png",
+        image: require("../assets/img/icons/quotysco.png"),
         prev: require("../assets/img/prevs/quotysco.png"),
         name: "Quotysco",
         category: "Social Media",
@@ -60,8 +60,19 @@ export default {
         },
         description: "Quotysco is an open-source Blog-Creation platform. You can simply create a blog and write posts, which others can read. You can follow blogs and interact with posts."
       },
+      passwords: {
+        image: require("../assets/img/icons/passwords.png"),
+        prev: "https://cdn.interaapps.de/service/quotysco/userupload/8d09767a62423d85ff31342a4c369adb6bc1f65808a5a6274a2df069d99845df6be082b392bb3ceabc514509c75bcc2730860f02d69e1db795a4cc4c3f5c0f1e170e6e586dbc99d4c22081356d3018c8.svg",
+        name: "InteraApps Passwords",
+        category: "Tools",
+        links: {
+          "Visit": "https://passwords.interaapps.de",
+          "Source-Code": "https://github.com/interaapps/passwords"
+        },
+        description: "InteraApps Passwords is a client-encrypted password-manager. Don't forget your passwords. Just keep one in mind. This one will be the encryption key for all of your passwords."
+      },
       darkmode: {
-        image: "https://camo.githubusercontent.com/0ac16ab0c0033f8c562b72601722eb71c0a269c1/68747470733a2f2f6c68332e676f6f676c6575736572636f6e74656e742e636f6d2f614c704879496c4a71663570434869475433356575676d584951574e34574e7630454c536d656833414e4252585865727935334e6f64534f30353246387561387632413d733138302d7277",
+        image: require("../assets/img/icons/darkmode.webp"),
         prev: require("../assets/img/prevs/darkmode.png"),
         name: "Darkmode",
         category: "Tools",
@@ -74,17 +85,6 @@ export default {
         },
         description: "Darkmode is an app with which you can enable the system-wide darkmode on android devices!"
       },
-      passwords: {
-        image: "https://passwords.interaapps.de/icon.svg",
-        prev: "https://cdn.interaapps.de/service/quotysco/userupload/8d09767a62423d85ff31342a4c369adb6bc1f65808a5a6274a2df069d99845df6be082b392bb3ceabc514509c75bcc2730860f02d69e1db795a4cc4c3f5c0f1e170e6e586dbc99d4c22081356d3018c8.svg",
-        name: "InteraApps Passwords",
-        category: "Tools",
-        links: {
-          "Visit": "https://passwords.interaapps.de",
-          "Source-Code": "https://github.com/interaapps/passwords"
-        },
-        description: "InteraApps Passwords is a client-encrypted password-manager. Don't forget your passwords. Just keep one in mind. This one will be the encryption key for all of your passwords. We don't know your passwords and strangers not."
-      }
     }
   }},
   components: {

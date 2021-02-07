@@ -3,8 +3,9 @@
 
     <h2>Imprint:</h2>
     <p>Julian Gojani<br>
-    Pinjes, 2<br>
-    85360 Ulcinj<br>
+    Chrispinusstraße 13<br>
+    46395 Bocholt<br>
+    Deutschland<br>
     </p><br>
     <h2>Kontakt</h2>
     <p>
@@ -12,7 +13,6 @@
     </p>
     <br><br>
 
-    Der InteraApps Sitz liegt in Deutschland. Das Impressum liegt im Ausland. (Darüber kann man auch Kontakt aufnehmen.). Uns wäre es am liebsten, dass Sie uns über die angegebe EMail kontaktieren.
     </div>
 </template>
 <style lang="scss" scoped>
