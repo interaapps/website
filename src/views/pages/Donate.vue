@@ -5,13 +5,11 @@
 
     <div style="margin: auto;">
         <div id="donation-platforms">
-            <a href="https://www.patreon.com/interaapps"><img src="@/assets/img/icons/patreon.jpg"><span>Patreon</span></a>
-            <a href="https://opencollective.com/interaapps"><img src="@/assets/img/icons/opencollective.svg"><span>OpenCollective</span></a>
             <a href="https://liberapay.com/InteraApps"><img src="@/assets/img/icons/liberapay.svg"><span>LiberaPay</span></a>
         </div>
     </div>
 
-    <h2 style="text-align: center; display: block; margin: 50px 0px 80px 0px;">What do we to with that money?</h2>
+    <h2 style="text-align: center; display: block; margin: 50px 0px 80px 0px;">What do we do with that money?</h2>
     <p style="text-align: center;">
         First aval we will finance our projects. Domains, Server and more.<br>We are also going to upgrade our servers. The rest will be splitt up in the team fairly.
     </p>
