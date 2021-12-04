@@ -33,7 +33,12 @@ export default {
                 url: '/donate'
             }
         ]
-    })
+    }),
+    methods: {
+        setUrls(urls){
+            this.urls = urls
+        }
+    }
 }
 </script>
 <style lang="scss" scoped>

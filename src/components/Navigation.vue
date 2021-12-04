@@ -72,6 +72,11 @@ export default {
                 this.scrolledPhone = false;
             }
         }
+    },
+    methods: {
+        setUrls(urls){
+            this.urls = urls
+        }
     }
 }
 </script>
