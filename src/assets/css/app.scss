@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: Inter, sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 html {
@@ -14,6 +17,48 @@ html {
     width: 100%;
     padding: 10px;
     margin: auto;
+}
+
+
+#big-title {
+    h1 {
+        font-size: 70px;
+        font-weight: 500;
+        color: #4542F4;
+        margin-top: 100px;
+
+        @media screen and (max-width: 1000px) {
+            font-size: 60px;
+        }
+        @media screen and (max-width: 720px) {
+            font-size: 50px;
+        }
+    }
+    div {
+        margin-top: 40px;
+    }
+}
+
+.button {
+    color: #4542F4;
+    background: #4542F41A;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px 15px;
+    font-weight: 500;
+    display: inline-block;
+    margin-right:  15px;
+    margin-bottom: 12px;
+    &:hover {
+        background: #4542F426;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .hide-me-720px {
+        display: none !important;
+    }
 }
 
 @import url("blog.scss")

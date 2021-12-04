@@ -11,7 +11,8 @@ const routes = [
     name: 'Home',
     meta: {
       title: "Home",
-      description: "InteraApps is a team that creates open source software which is free for everyone."
+      description: "InteraApps is a team that creates open source software which is free for everyone.",
+      footerDisabled: true
     },
     component: Home
   },
@@ -24,6 +25,14 @@ const routes = [
     component: () => import('../views/About.vue')
   },
   {
+    path: '/projects',
+    name: 'Projects',
+    meta: {
+      title: "Projects"
+    },
+    component: () => import('../views/Projects.vue')
+  },
+  {
     path: '/darkmode',
     name: 'Darkmode',
     meta: {
@@ -34,7 +43,7 @@ const routes = [
     component: () => import('../views/pages/Darkmode.vue')
   },
   {
-    path: '/privacy', name: 'Privacy',  meta: {navTitle: "Privacy & Terms"}, component: () => import('../views/pages/Privacy.vue')
+    path: '/privacy', name: 'Privacy',  meta: {navTitle: "Privacy & Transperency"}, component: () => import('../views/pages/Privacy.vue')
   },
   {
     path: '/p/informationen', name: 'Privacy',  meta: {navTitle: "Privacy & Terms"}, component: () => import('../views/pages/Privacy.vue')
@@ -49,12 +58,6 @@ const routes = [
   },
   {
     path: '/donate', name: 'Donate', component: () => import('../views/pages/Donate.vue')
-  },
-  {
-    path: '/blog', name: 'Blog', meta: {navTitle: "Blog"}, component: () => import('../views/blog/Blog.vue')
-  },
-  {
-    path: '/blog/:name', name: 'Blog', meta: {navTitle: "Blog"}, component: () => import('../views/blog/Post.vue')
   },
   {
     path: '/transparency', name: 'Transparency Report', meta: {navTitle: "Transparency Report"}, component: () => import('../views/transparency/Transparency.vue')
