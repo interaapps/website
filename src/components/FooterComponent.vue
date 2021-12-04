@@ -8,8 +8,8 @@
 
             <template v-for="(url, i) of urls">
                 <a v-if="url.type=='A'" :key="i" :class="{'link':true, 'hide-me-720px': url.hideOnMobile}" :href="url.url">{{url.text}}</a>
-                <router-link v-else :key="i" :class="{'link':true, 'hide-me-720px': url.hideOnMobile}" :to="url.url">{{url.text}}</router-link>
-                <a :key="i" v-if="i != urls.length-1" class="noSelection footerseparator">-</a>
+                <router-link v-else :key="'footer-'+i+url.text" :class="{'link':true, 'hide-me-720px': url.hideOnMobile}" :to="url.url">{{url.text}}</router-link>
+                <a :key="'footer-'+i+url.text" v-if="i != urls.length-1" class="noSelection footerseparator">-</a>
             </template>
 
             <a class="noSelection" id="copyright">InteraApps 2019-{{new Date().getFullYear()}}</a>

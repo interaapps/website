@@ -7,8 +7,8 @@
 
         <div id="links">
             <template v-for="(url, i) of urls">
-                <a v-if="url.type=='A'" :key="i" :class="{'link':true, 'hide-me-720px': url.hideOnMobile}" :href="url.url">{{url.text}}</a>
-                <router-link v-else :key="i" :class="{'link':true, 'hide-me-720px': url.hideOnMobile}" :to="url.url">{{url.text}}</router-link>
+                <a v-if="url.type=='A'" :key="'nav-'+i+url.text" :class="{'link':true, 'hide-me-720px': url.hideOnMobile}" :href="url.url">{{url.text}}</a>
+                <router-link v-else :key="'nav-'+i+url.text" :class="{'link':true, 'hide-me-720px': url.hideOnMobile}" :to="url.url">{{url.text}}</router-link>
             </template>
 
             <a v-if="showUser"
