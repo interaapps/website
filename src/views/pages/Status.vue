@@ -29,9 +29,9 @@
                             <span>{{l.name}}</span>
                         </h1>
 
-                        <div class="beats">
-                            <div class="beat" v-for="(i) of new Array(heartsbeats[l.id].length > 30 ? 0 : 30 - heartsbeats[l.id].length)" :key="i" />
-                            <div class="beat" v-for="(beat, i) of heartsbeats[l.id].reverse().slice(0,30).reverse()" :key="i" :style="{'background-color': beat.status == 1 ? '#5cdd8b' : '#dc3545'}" />
+                        <div class="beats" v-if="heartsbeats[l.id]">
+                            <div class="beat" v-for="(i) of heartsbeats[l.id] ? (new Array(heartsbeats[l.id].length > 30 ? 0 : 30 - heartsbeats[l.id].length)) : []" :key="i" />
+                            <div class="beat" v-for="(beat, i) of max30rev(heartsbeats[l.id])" :key="i" :style="{'background-color': beat.status == 1 ? '#5cdd8b' : '#dc3545'}" />
                         </div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@ export default {
         incident: null,
         timerId: 0
     }),
-    mounted(){
+    async mounted(){
         for (let i = 30; i > 0; i--) {
             this.beats.push(i-1)
         }
@@ -84,6 +84,9 @@ export default {
                     this.heartsbeats = res.heartbeatList
                     this.uptimeList = res.uptimeList
                 })
+        },
+        max30rev(arr){
+            return arr.slice(arr.length-31, arr.length-1)
         }
     }
 }
