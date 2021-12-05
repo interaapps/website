@@ -38,7 +38,8 @@ const routes = [
     meta: {
       title: "Darkmode",
       footerColor: "#040710",
-      description: "Darkmode is an app with which you can toggle your android system-wide darkmode."
+      description: "Darkmode is an app with which you can toggle your android system-wide darkmode.",
+      darkNavigation: true
     },
     component: () => import('../views/pages/Darkmode.vue')
   },

@@ -12,10 +12,10 @@
                 {{incident.content}}
             </p>
         </div>
-        <br><br>
+        <br><br><br>
         <div id="status-list">
             <div v-for="(monitor, i) of monitorList" :key="'monitor-'+i">
-                <h1 style="margin-bottom: 20px; color: #545454; margin-left: 10px" v-if="monitor.name != 'Services'">{{monitor.name}}</h1>
+                <h1 style="margin-bottom: 20px; color: #545454; margin-left: 10px; margin-top: 50px;" v-if="monitor.name != 'Services'">{{monitor.name}}</h1>
                 
                 <div>
                     <div class="entry" v-for="(l, i) of monitor.monitorList" :key="'m-'+i">
@@ -133,7 +133,7 @@ export default {
                 margin: 2px;
                 border-radius: 10px;
 
-                background-color: #767676;
+                background-color: #AAA;
             }
             @media screen and (max-width: 1020px) {
                 position: initial;

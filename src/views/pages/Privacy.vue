@@ -134,14 +134,14 @@
             </ul>
             
             <h3>Redirection</h3>
-            <p>If you get redirected by a shorten url we'll save the following data, so the user who shorten the url gets detailed tracking information.</p>
+            <p>If you get redirected by a shorten url we will save the following data, so the user who shorten the url gets detailed tracking information.</p>
             <ul>
                 <li>Identifier <gen /></li>
                 <li>Link Identifier <gen /></li>
                 <li>Date <gen/></li>
                 <li>Operating System <bri/></li>
                 <li>Internet Browser <bri/></li>
-                <li>Estimated Country by you IP-Address <bri/></li>
+                <li>Estimated Country by your IP-Address <bri/></li>
                 <li>Your IP-Address is getting cached<bri/></li>
             </ul>
             
