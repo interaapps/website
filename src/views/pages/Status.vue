@@ -30,8 +30,13 @@
                         </h1>
 
                         <div class="beats" v-if="heartsbeats[l.id]">
-                            <div class="beat" v-for="(i) of heartsbeats[l.id] ? (new Array(heartsbeats[l.id].length > 30 ? 0 : 30 - heartsbeats[l.id].length)) : []" :key="i" />
-                            <div class="beat" v-for="(beat, i) of max30rev(heartsbeats[l.id])" :key="i" :style="{'background-color': beat.status == 1 ? '#5cdd8b' : '#dc3545'}" />
+                            <div class="beat" v-for="(i) of heartsbeats[l.id] ? (new Array(heartsbeats[l.id].length > 30 ? 0 : 30 - heartsbeats[l.id].length)) : []" :key="i">
+                                <span class="tooltip">no data</span>
+                            </div>
+                            <div class="beat" v-for="(beat, i) of max30rev(heartsbeats[l.id])" :key="i" :style="{'background-color': beat.status == 1 ? '#5cdd8b' : '#dc3545'}">
+                                <span v-if="beat.status == 1" class="tooltip success">{{beat.ping}}ms</span>
+                                <span v-else class="tooltip danger">{{beat.msg ? beat.msg : 'unavailable'}}</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -127,6 +132,7 @@ export default {
             vertical-align: middle;
             margin-top: 7px;
             .beat {
+                position: relative;
                 display: inline-block;
                 width: 5px;
                 height: 18px;
@@ -134,6 +140,37 @@ export default {
                 border-radius: 10px;
 
                 background-color: #AAA;
+
+                .tooltip {
+                    white-space: pre;
+                    opacity: 0;
+                    transition: 0.1s;
+                    position: absolute;
+                    bottom: 23px;
+                    padding: 2px 4px;
+                    min-width: 30px;
+                    text-align: center;
+                    background: #616161;
+                    border-radius: 6px;
+                    color: #FFF;
+                    right: 50%;
+                    transform: translateX(50%);
+                    &.danger {
+                        background: #dc3545;
+                    }
+                    &.success {
+                        background: #5cdd8b;
+                    }
+                }
+                &:hover {
+                    .tooltip {
+                        opacity: 1;
+                        display: inline-block;
+                    }
+                }
+                .tooltip:hover {
+                    opacity: 0;
+                }
             }
             @media screen and (max-width: 1020px) {
                 position: initial;
