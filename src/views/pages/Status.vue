@@ -104,7 +104,7 @@ export default {
         position: relative;
         margin-bottom: 20px;
         padding: 10px;
-        border-radius: 10px;
+        border-radius: 15px;
         h1 {
             font-size: 24px;
             color: #656565;
@@ -184,7 +184,7 @@ export default {
             }
         }
         &:hover {
-            background-color: #00000006;
+            background-color: #00000007;
         }
     }
 }
