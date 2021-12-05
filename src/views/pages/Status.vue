@@ -31,7 +31,7 @@
 
                         <div class="beats">
                             <div class="beat" v-for="(i) of new Array(heartsbeats[l.id].length > 30 ? 0 : 30 - heartsbeats[l.id].length)" :key="i" />
-                            <div class="beat" v-for="(beat, i) of heartsbeats[l.id].slice(0,30)" :key="i" :style="{'background-color': beat.status == 1 ? '#5cdd8b' : '#dc3545'}" />
+                            <div class="beat" v-for="(beat, i) of heartsbeats[l.id].reverse().slice(0,30).reverse()" :key="i" :style="{'background-color': beat.status == 1 ? '#5cdd8b' : '#dc3545'}" />
                         </div>
                     </div>
                 </div>
