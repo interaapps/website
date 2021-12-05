@@ -30,8 +30,8 @@
         </div>
       </div>
     </div>
-    <router-link to="/privacy" style="color: #AAA; text-decoration: none; float: right; margin-top: 200px;">Privacy</router-link>
-    <router-link to="/imprint" style="color: #AAA; text-decoration: none; float: right; margin-top: 200px; margin-right: 10px;">Imprint</router-link>
+    <router-link to="/privacy" style="color: #AAA; text-decoration: none; float: right; margin-top: 140px;">Privacy</router-link>
+    <router-link to="/imprint" style="color: #AAA; text-decoration: none; float: right; margin-top: 140px; margin-right: 10px;">Imprint</router-link>
   </div>
 </template>
 
@@ -48,16 +48,17 @@ export default {
 
 <style lang="scss" scoped>
   .contents {
+    height: 100%;
   }
   #top {
     position: relative;
     padding-bottom: 200px;
   }
   #top-images {
-    transform: rotate(4deg);
     position: absolute;
     right: -270px;
-    margin-top: -130px;
+    top: 50%;
+    transform: translateY(-55%) rotate(4deg);
 
     display: inline-block;
     width: fit-content;
@@ -141,6 +142,14 @@ export default {
     }
     #bg-cs {
       display: none;
+    }
+  }
+  @media screen and (max-width: 780px) {
+    #top-images div img {
+      width: 100%;
+      display: block;
+      margin-left: 0px;
+      margin-bottom: 10px;
     }
   }
 </style>

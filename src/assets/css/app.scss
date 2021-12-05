@@ -13,9 +13,9 @@ html {
 }
 
 .contents {
-    max-width: 1300px;
+    max-width: 1380px;
     width: 100%;
-    padding: 10px;
+    padding: 40px;
     margin: auto;
 }
 
@@ -26,6 +26,10 @@ html {
         font-weight: 500;
         color: #4542F4;
         margin-top: 100px;
+
+        @media screen and (max-width: 1100px) {
+            font-size: 70px;
+        }
 
         @media screen and (max-width: 1000px) {
             font-size: 60px;
@@ -59,6 +63,23 @@ html {
     .hide-me-720px {
         display: none !important;
     }
+
+    .contents {
+        padding: 15px;
+    }
 }
+@media screen and (max-width: 1280px) {
+    .hide-me-1280px {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 950px) {
+    .hide-me-950px {
+        display: none !important;
+    }
+}
+
+
+
 
 @import url("blog.scss")

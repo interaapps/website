@@ -2,7 +2,7 @@
     <div class="contents"><br><br>
     <div id="big-title">
         <h1>
-          Privacy & Transperency
+          Privacy & Transparency
         </h1>
         <div>
           <a class="button" href="#accounts">Accounts</a>
@@ -153,6 +153,10 @@
     </div>
 
 </template>
+<script>
+export default {
+}
+</script>
 <style lang="scss" scoped>
 #privacy {
     font-size: 19px;

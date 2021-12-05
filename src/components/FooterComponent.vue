@@ -81,13 +81,17 @@ export default {
     margin-right: 20px;
 }
 
- @media screen and (max-width: 1300px) { 
+@media screen and (max-width: 1280px) {
     #footer-back {
-        padding-bottom: 0px;;
+        padding: 20px;
     }
  }
  @media screen and (max-width: 720px) {
+    #footer-back {
+        padding: 0px;
+    }
     #footer {
+        border-radius: 0px;
         padding: 10px 20px;
         text-align: center;
     }
