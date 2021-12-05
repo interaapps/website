@@ -86,7 +86,7 @@ export default {
                 })
         },
         max30rev(arr){
-            return arr.slice(arr.length-31, arr.length-1)
+            return arr.slice(arr.length-30, arr.length)
         }
     }
 }
