@@ -46,6 +46,9 @@ const routes = [
     path: '/privacy', name: 'Privacy',  meta: {navTitle: "Privacy & Transparency", hideNavTitleTop: true}, component: () => import('../views/pages/Privacy.vue')
   },
   {
+    path: '/status', name: 'Status',  meta: {navTitle: "Status", hideNavTitleTop: true}, component: () => import('../views/pages/Status.vue')
+  },
+  {
     path: '/p/informationen', name: 'Privacy',  meta: {navTitle: "Privacy & Terms"}, component: () => import('../views/pages/Privacy.vue')
   },
   {

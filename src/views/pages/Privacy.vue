@@ -28,7 +28,7 @@
             All of our services except of InteraApps Accounts are on <a href="https://github.com/interaapps">GitHub</a> publicly available with their source codes
         </p>
         
-        <h1>Detail per service</h1>
+        <h1>Details per service</h1>
         <h3>Legend</h3>
         <p>Here are some badges which indicate, how we'll save some data and in which context</p>
         <br>

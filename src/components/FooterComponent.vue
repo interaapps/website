@@ -31,7 +31,11 @@ export default {
             {
                 text: 'Donate',
                 url: '/donate'
-            }
+            },
+            {
+                text: 'Status',
+                url: '/status',
+            },
         ]
     }),
     methods: {

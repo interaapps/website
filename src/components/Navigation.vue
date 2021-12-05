@@ -56,16 +56,17 @@ export default {
                 text: 'Projects',
                 url: '/projects',
                 hideOnMobile: true
-            }
+            },
         ],
         hideNavTitleTop: false
     }),
     watch: {
         $route(){
-            this.hideNavTitleTop = false
+            this.hideNavTitleTop = this.$route.meta.hideNavTitleTop
         }
     },
     mounted(){
+        this.hideNavTitleTop = this.$route.meta.hideNavTitleTop
         window.onscroll = ()=>{
             if (window.scrollY > 50 && window.innerWidth >= 720) {
                 this.scrolled = true;

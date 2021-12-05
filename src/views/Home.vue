@@ -27,6 +27,7 @@
           <router-link class="button" to="/privacy">Privacy</router-link>
           <a class="button" href="https://developers.interaapps.de">Developers</a>
           <a class="button" href="https://github.com/interaapps">GitHub</a>
+          <router-link class="button" to="/status">Status</router-link>
         </div>
       </div>
     </div>
